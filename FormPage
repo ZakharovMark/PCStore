@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style5.css">
+		<title>Полезные продукты питания</title>
+	</head>
+
+	<body>
+		<h1 class="header1">Анкета покупателя техники</h1>
+		<form action="obr.php">
+
+			<fieldset class="fieldset1">
+				<legend>Log In</legend>
+				<label for="log" class="label1">Логин<em>*</em></label>
+				<input name="log" id="log" maxlength="20" placeholder="LoginName1234" required><br>
+				<label for="Pass" class="label1">Пароль<em>*</em></label>
+				<input type="password" name="Pass" id="Pass" maxlength="15" placeholder="Password" required><br>
+			</fieldset>
+			<br>
+			<fieldset class="Maintextstyle">
+				<legend>Опрос</legend>
+				<fieldset class="fieldset2">
+					Выберите желаемое:<br>
+					<label class="label_opros"><input type="radio" name="forWhat" id="f1" value="game">Компьютер нужен для игр </label><br>
+					<label class="label_opros"><input type="radio" name="forWhat" id="f2" value="study">Компьютер нужен для учебы </label><br>
+					<label class="label_opros"><input type="radio" name="forWhat" id="f3" value="work">Компьютер нужен для работы </label><br>
+					<label for="comments"> &nbspЕсли для работы или учебы, опишите какой:</label><br>
+					<textarea name="comments" id="comments" rows="3" cols="30" placeholder="Кем вы работаете?"></textarea>
+					<button style="position: absolute; top: 150px;" type="reset">Стереть</button>
+				</fieldset>
+				<fieldset class="fieldset2">
+					На какую цену вы расчитываете:<br>
+					<label class="label_opros"><input type="radio" name="price" id="p1" value="30000">&lt 30.000 рублей </label><br>
+					<label class="label_opros"><input type="radio" name="price" id="p2" value="60000">&lt 60.000 рублей </label><br>
+					<label class="label_opros"><input type="radio" name="price" id="p3" value="100000">&lt 100.000 рублей </label><br>
+					<label class="label_opros"><input type="radio" name="price" id="p3" value="100000">&gt 100.000 рублей </label><br>
+				</fieldset>
+				<fieldset class="fieldset2">
+					Наличие в магазине:
+					<br>
+					<br>
+					<select name="Shop" size="1">
+						<option value="s0">В любом из 5 магазинов</option>
+						<option value="s1">Тц Озерки</option>
+						<option value="s2">Тц Пик</option>
+						<option value="s3">Тц Европолис</option>
+						<option value="s4">Метро Автово Ярмарка "Юнона"</option>
+						<option value="s5">Тц Гранд Каньон</option>
+					</select><br>
+					<br>
+					<label class="label_opros"><input type="checkbox" name="Nalichie" id="Nalichie" checked>В наличии </label><br>
+					<label class="label_opros"><input type="checkbox" name="Segodnya" id="Segodnya" checked>Под заказ: сегодня </label><br>
+					<label class="label_opros"><input type="checkbox" name="Zavtra" id="Zavtra" checked>Под заказ: завтра </label><br>
+					<label class="label_opros"><input type="checkbox" name="Pozje" id="Pozje">Под заказ: позже </label><br>
+					&nbspЕсли позже, то укажите примерную дату:<label class="label_opros"><input type="date" name="On_date" value="2022-10-25" min="2022-10-25"> </label><br>
+				</fieldset>
+				<p><input type="submit" value="Отправить"></p>
+			</fieldset>
+
+			
+		</form>
+	</body>
+</html>
